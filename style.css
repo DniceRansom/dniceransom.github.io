@@ -28,7 +28,9 @@ h1,h2,h3,h4,h5,h6{
     padding: 2rem 5rem 2rem 5rem;
 }
 
-h3{font-size: 1.2rem; color: #4F81BD}
+h3{font-size: 1.2rem; color: #FF00FF}
+
+h2{font-size: 1.2rem; color:#4F81BD}
 
 p{
     margin-bottom: 1.2rem;
