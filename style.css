@@ -1,0 +1,37 @@
+*{
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box
+    position relative;
+}
+
+html{
+    background-color: #fbfaf6;
+    color:#404030;
+    font-family: serif;
+    font-size: 26px;
+    text-rendering: optimizeLegibility;
+}
+
+body{
+    max-width: 1276px;
+    margin: 0 auto;
+    background-color:#fff;
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 3rem;
+    padding: 2rem 5rem 2rem 5rem;
+}
+
+h3{font-size: 1.2rem; color: #4F81BD}
+
+p{
+    margin-bottom: 1.2rem;
+    padding: 0 5rem;
+    line-height: 135%;
+}
