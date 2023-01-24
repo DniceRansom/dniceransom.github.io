@@ -9,7 +9,7 @@ html{
     background-color: #fbfaf6;
     color:#404030;
     font-family: serif;
-    font-size: 26px;
+    font-size: 20px;
     text-rendering: optimizeLegibility;
 }
 
@@ -43,7 +43,7 @@ p{
     font-family: "Montserrat", sans-serif;
     align-items: center;
     justify-content: center;
-    margin-top: 250px;
+    margin-top: 100px;
 }
 
 nav {
