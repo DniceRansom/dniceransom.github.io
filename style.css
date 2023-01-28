@@ -32,7 +32,12 @@ h1,h2,h3,h4,h5,h6{
 
 h3{font-size: 1.2rem; color: #FF00FF;}
 
-h2{font-size: 1.2rem; color:#4F81BD; margin-top: 50px;}
+h2{
+    font-size: 1.2rem;
+    color:#4F81BD;
+    margin-top: 50px;
+    align-items: center;
+}
 
 p{
     margin-bottom: 1.2rem;
