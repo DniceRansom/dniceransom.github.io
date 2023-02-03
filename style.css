@@ -1,10 +1,209 @@
-
-
-/*
-.nav-links a:hover:not(.active) {
-    background-color: lightseagreen;
+* {
+    box-sizing: border-box;
 }
 
-.nav-links li a.active {
-    background-color: #4caf50
-} */
+h3 {
+    color: #54A;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+nav {
+    background: #2c3e50;
+    height: 80px;
+    width: 100;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover {
+    background: #1b9bff;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 852px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn {
+        display: block;
+    }
+    ul{
+        position: inherit;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+
+
+/* Header/logo title */
+.header{
+    padding: 60px;
+    text-align: center;
+    background: #54A;
+    color: white;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    display: flex;
+    background-color: #333
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other*/
+/* Sidebar/left column */
+
+.side {
+    flex: 30;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.side-2 {
+    flex: 30;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.side-3 {
+    flex: 30;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.header {
+    clear: both;
+}
+
+/* Main column */
+.main {
+    flex: 70px;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.project-header {
+    padding: 60px;
+    text-align: center;
+    background: #1b9bff;
+    color: white;
+}
+
+.project-js {
+    padding: 60px;
+    text-align: center;
+    background: #5f7;
+    color: white;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top each other instead of next to each other */
+@media (max-width: 700px) {
+    .row, .navbar {
+        flex-direction: column;
+    }
+}
