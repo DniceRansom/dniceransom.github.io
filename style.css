@@ -86,6 +86,7 @@ a.active,a:hover {
     .checkbtn {
         display: block;
     }
+    
     ul{
         position: inherit;
         width: 100%;
@@ -116,7 +117,6 @@ a.active,a:hover {
         left: 0;
     }
 }
-
 
 
 /* Header/logo title */
