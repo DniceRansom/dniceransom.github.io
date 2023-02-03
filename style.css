@@ -63,6 +63,14 @@ a.active,a:hover {
     display: none;
 }
 
+.body-text {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+
 @media (max-width: 852px){
     label.logo{
         font-size: 30px;
@@ -199,6 +207,7 @@ a.active,a:hover {
     padding: 20px;
     text-align: center;
     background: #ddd;
+    background-color: #999999;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top each other instead of next to each other */
