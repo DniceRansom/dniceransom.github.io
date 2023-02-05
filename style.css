@@ -196,6 +196,10 @@ a.active,a:hover {
     padding: 20px;
 }
 
+.image {
+    width: 100%
+}
+
 .project-header {
     padding: 60px;
     text-align: center;
