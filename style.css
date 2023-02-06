@@ -196,8 +196,8 @@ a.active,a:hover {
     padding: 20px;
 }
 
-.image {
-    width: 100%
+.image img {
+    border-radius: 50%;
 }
 
 .project-header {
