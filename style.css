@@ -71,6 +71,7 @@ a.active,a:hover {
     align-items: center;
     justify-content: center;
     margin-top: 180px;
+    padding: 150px;
 }
 
 @media (max-width: 852px){
@@ -180,6 +181,9 @@ a.active,a:hover {
     clear: both;
 }
 
+.body-text {
+    clear: both;
+}
 
 /* Main column */
 .main {
