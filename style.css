@@ -64,14 +64,14 @@ a.active,a:hover {
 #check {
     display: none;
 }
-/*
+
 .body-text {
     display: flex;
     font-family: "Montserrat", sans-serif;
     align-items: center;
     justify-content: center;
-    margin-top: 150px;
-}  */
+    margin-top: 180px;
+}
 
 @media (max-width: 852px){
     label.logo{
