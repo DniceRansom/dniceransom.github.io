@@ -18,14 +18,105 @@
        <p>Thank you for taking the time to help us improve the platform</p>
        </div>
        
-        <div style="height: 500px; background: #999; color: beige; margin: 0px 20px 0px 20px; text-align: center; padding: 5px;">
-            <h3>Would you recommend ourSampleWeb to a friend?</h3>
+        <div style="height: 700px; background: #999; color: beige; margin: 0px 20px 0px 20px; padding: 5px;">
+           <form>
+               Name <br>
+               <input type="text" name="name" placeholder="Enter your name"><br><br>
+               Email<br>
+               <input type="text" name="Email" placeholder="Enter your Email"><br><br>
+               Age (optional)<br>
+               <input type="text" name="name" placeholder="Enter your Age"><br><br>
+           </form>
+        
+           
+           <script type="text/javascript">
+               function madeSelection(elem, helperMsg){
+                   if(elem.value=="Please Choose"){
+                       alert(helperMsg);
+                       elem.focus();
+                       return false;
+                   }else{
+                       return true;
+                   }
+               }    
+            </script>
             
-            <p>What is your favorite feature of ourSampleWeb?</p>
+            <form>Which option best describe your current role?<br>       
+            <label for="role"></label>
+             <select id="role">
+               <option value="Student">Select current role</option>
+                <option value="Student">Student</option>
+                <option value="full-time">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="prefer">Prefer not to say</option>
+                <option value="other">Other</option>
+             </select>
+           </form><br>
+           
+            <form>
+            Would you recommend ourSampleWeb to a friend?<br>
+            <label for="definitely">
+                <input id="definitely" type="radio" name="definitely-maybe">Definitely
+            </label><br>
+            <label for="maybe">
+                <input id="maybe" type="radio" name="maybe" />Maybe
+            </label><br>
+            <label for="not sure">
+                <input id="not sure" type="radio" name="not sure"/>Not sure
+
+            </label>
+            </form>
+            <br>
             
-            <h3>What would you like to see improved? (Check all that apply)</h3>
+            <form> 
+            What is your favorite feature of ourSampleWeb?<br>      
+            <label for="favorite"></label>
+             <select id="favorite" onclick="madeSelection(document.getElementbyId('role'), 'Please Choose Something')">
+               <option value="Student">Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="open">Open Source</option>
+                <option value="forum">Forum</option>
+             </select>   
+           </form>
+           
+            <h3></h3>
+            <form>What would you like to see improved? (Check all that apply)<br>
+            <label for="front-end">
+                <input id="front" type="radio" name="front-back">front-end Projects
+            </label><br>
+            <label for="back">
+                <input id="back" type="radio" name="back-front" />Back-end Project
+            </label><br>
+            <label for="data">
+                <input id="data" type="radio" name="data-datum"/>Data Visualization
+            </label><br>
+            <label for="data">
+                <input id="challenges" type="radio" name="challenges-data"/>Challenges
+            </label><br>
+            <label for="open">
+                <input id="open" type="radio" name="open-close"/>Open Source Community
+            </label><br>
+            <label for="help">
+                <input id="help" type="radio" name="help-care"/>Help Room
+            </label><br>
+            <label for="video">
+                <input id="video" type="radio" name="video-audio"/>Videos
+            </label><br>
+            <label for="forum">
+                <input id="forum" type="radio" name="forum-data"/>Forum
+            </label>
             
-            <h3>Any comments or suggestions?</h3>
+            </form><br>
+            
+            <div>
+            Any comments or suggestions?<br>
+            <input type="text" placeholder="Enter your comment here..."><br>
+            </div><br>
+            
+            <button onclick="madeSelection(document.getElementbyId('role'), 'Please Choose Something')" type="submit" style="background-color: chartreuse">submit</button>
+            
         </div>
         <br>
         
