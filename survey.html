@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     
+    <script type="text/javascript">
+               function madeSelection(elem, helperMsg){
+                   if(elem.value=="Please Choose"){
+                       alert(helperMsg);
+                       elem.focus();
+                       return false;
+                   }else{
+                       return true;
+                   }
+               }    
+            </script>
+    
     <title>Survey Form</title>
 </head>
 <body>
@@ -18,7 +30,7 @@
        <p>Thank you for taking the time to help us improve the platform</p>
        </div>
        
-        <div style="height: 700px; background: #999; color: beige; margin: 0px 20px 0px 20px; padding: 5px;">
+        <div style="height: 800px; background: #999; color: beige; margin: 0px 20px 0px 20px; padding: 5px;">
            <form>
                Name <br>
                <input type="text" name="name" placeholder="Enter your name"><br><br>
@@ -28,18 +40,6 @@
                <input type="text" name="name" placeholder="Enter your Age"><br><br>
            </form>
         
-           
-           <script type="text/javascript">
-               function madeSelection(elem, helperMsg){
-                   if(elem.value=="Please Choose"){
-                       alert(helperMsg);
-                       elem.focus();
-                       return false;
-                   }else{
-                       return true;
-                   }
-               }    
-            </script>
             
             <form>Which option best describe your current role?<br>       
             <label for="role"></label>
@@ -114,12 +114,12 @@
             Any comments or suggestions?<br>
             <input type="text" placeholder="Enter your comment here..."><br>
             </div><br>
-            
             <button onclick="madeSelection(document.getElementbyId('role'), 'Please Choose Something')" type="submit" style="background-color: chartreuse">submit</button>
-            
         </div>
         <br>
         
     </div>
+    
+    
 </body>
 </html>
